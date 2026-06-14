@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Card</title>
+    <!-- Font Awesome Link for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />       
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Center the card on the screen */
+        body {
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Profile Card Layout */
+        .profile-card {
+            background: #ffffff;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover animation effect */
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Top header background banner */
+        .card-header {
+            background: #2c3e50;
+            height: 120px;
+        }
+
+        /* Image styling and positioning */
+        .profile-img-container {
+            margin-top: -60px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff;
+            background-color: #f0f0f0;
+        }
+
+        /* Profile Information text */
+        .profile-info {
+            padding: 20px 25px;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 5px;
+        }
+
+        .profile-title {
+            font-size: 14px;
+            color: #9b59b6;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .profile-bio {
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Social Media Icons Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #555555;
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #f1f2f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        /* Color change on social link hover */
+        .social-links a:hover {
+            background: #9b59b6;
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+
+        /* Contact Button styling */
+        .contact-btn {
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 25px;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Card Container -->
+    <div class="profile-card">
+        
+        <!-- Top decorative banner background -->
+        <div class="card-header"></div>
+        
+        <!-- Profile Picture section -->
+        <div class="profile-img-container">
+            <!-- Replace image source URL with your own photo later if desired -->
+            <img src="./profile-image.jpeg" alt="Profile Picture" class="profile-img">
+        </div>
+        
+        <!-- Text details and titles -->
+        <div class="profile-info">
+            <h2 class="profile-name">LAVISH RANA</h2>
+            <p class="profile-title">B.Tech Student</p>
+            <p class="profile-bio">I am a dedicated B.Tech student with a passion for technology and innovation. I enjoy exploring new programming languages and frameworks to enhance my skills and contribute to meaningful projects.</p>
+            
+            <!-- Social profile connections links -->
+            <div class="social-links">
+                <a href="https://github.com/lavishr2141-blip" target="_blank" aria-label="GitHub">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/lavish-rana-r2141/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/pvt_ranaa__" target="_blank" aria-label="Instagram">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="mailto:lavishr2141@gmail.com" aria-label="Email">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                 <a href="https://drive.google.com/file/d/1ARVSXkfP3no4Edk-cLw7f-CViKKAiW22/view?usp=drivesdk" aria-label="Resume" target="_blank">
+                    <i class="fa fa-file"></i>
+                </a>              
+            </div>
+            
+            <!-- Action call-to-action link button -->
+            <!-- <a href="https://example.com" class="contact-btn" target="_blank">View More</a> -->
+        </div>
+        
+    </div>
+
+</body>
+</html>
